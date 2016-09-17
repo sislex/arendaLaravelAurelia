@@ -15,7 +15,6 @@ class IndexController extends Controller
     {
         $items = Good::where('id', '=', '1')->get();
 
-
         return view('index/index');
     }
 }
