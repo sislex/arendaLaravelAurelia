@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Catalog;
+use App\Http\Controllers\Controller;
 use App\Good;
 
 class IndexController extends Controller
