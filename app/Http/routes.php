@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'Catalog\IndexController@index');
+Route::get('/', 'Catalog\CatalogController@index');
