@@ -13,7 +13,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $items = Good::where('id', '=', '1')->get();
+//        $items = Good::where('id', '=', '1')->get();
 
         return view('index/index');
     }
