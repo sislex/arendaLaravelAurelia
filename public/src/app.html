@@ -1,3 +1,543 @@
 <template>
-  <h1>${message}</h1>
+
+  <!--[if lt IE 7]>
+  <p class="chromeframe">You are using an outdated browser. <a href="template/http://browsehappy.com/">Upgrade your browser today</a> or <a href="template/http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+  <div class="body">
+    <!-- Start Site Header -->
+    <div class="site-header-wrapper">
+      <header class="site-header">
+        <div class="container sp-cont">
+          <div class="site-logo">
+            <h1><a href="template/index.html"><img src="template/images/logo.png" alt="Logo"></a></h1>
+          </div>
+          <div class="header-right">
+            <div class="search-function">
+              <span><i class="fa fa-phone"></i> Call us <strong>1800 011 2211</strong> <em>or</em> search</span>
+            </div>
+            <div class="user-login-panel">
+              <a href="template/#" class="user-login-btn" data-toggle="modal" data-target="#loginModal"><i class="icon-profile"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Site Header -->
+      <div class="navbar">
+        <div class="container sp-cont">
+          <ul class="pull-right additional-triggers">
+            <li><a href="template/#" data-toggle="dropdown">Currency <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="currencydropdown">
+                <li><a href="template/#"><i class="fa fa-dollar"></i></a></li>
+                <li><a href="template/#"><i class="fa fa-euro"></i></a></li>
+              </ul>
+            </li>
+            <li><a href="template/#" data-toggle="dropdown">Language <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="languagedropdown">
+                <li><a href="template/#">English</a></li>
+                <li><a href="template/#">Spanish</a></li>
+                <li><a href="template/#">Portuguese</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Main Navigation -->
+          <nav class="main-navigation dd-menu toggle-menu" role="navigation">
+            <ul class="sf-menu">
+              <li><a href="template/javascript:void(0)">Home</a>
+                <ul class="dropdown">
+                  <li><a href="template/javascript:void(0)">Home versions</a>
+                    <ul class="dropdown">
+                      <li><a href="template/index.html">Default</a></li>
+                      <li><a href="template/index2.html">Version 2</a></li>
+                      <li><a href="template/index3.html">Version 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="template/javascript:void(0)">Slider versions</a>
+                    <ul class="dropdown">
+                      <li><a href="template/index.html">Default(Flexslider)</a></li>
+                      <li><a href="template/index-revslider.html">Slider Revolution <span class="label label-danger">New</span></a></li>
+                      <li><a href="template/hero-carousel.html">Full Width Carousel</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="template/javascript:void(0)">Search Form Positions</a>
+                    <ul class="dropdown">
+                      <li><a href="template/index.html">Default(With Main Menu)</a></li>
+                      <li><a href="template/search-below-slider.html">Below Slider</a></li>
+                      <li><a href="template/search-over-slider.html">Over Slider</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="template/javascript:void(0)">Header versions</a>
+                    <ul class="dropdown">
+                      <li><a href="template/index.html">Default</a>
+                      <li><a href="template/header-v2.html">Version 2</a></li>
+                      <li><a href="template/header-v3.html">Version 3</a></li>
+                      <li><a href="template/header-v4.html">Version 4</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="template/javascript:void(0)">Pages</a>
+                <ul class="dropdown">
+                  <li><a href="template/about.html">About Us</a></li>
+                  <li><a href="template/contact.html">Contact Us</a></li>
+                  <li><a href="template/joinus.html">Signup</a></li>
+                  <li><a href="template/404.html">404 Error Page</a></li>
+                  <li><a href="template/add-listing-pricing.html">Pricing</a></li>
+                  <li><a href="template/shortcodes.html">Shortcodes</a></li>
+                  <li><a href="template/typography.html">Typography</a></li>
+                  <li><a href="template/dealers-search.html">Dealer Search</a></li>
+                  <li><a href="template/dealers-search-results.html">Dealer Search Results</a></li>
+                </ul>
+              </li>
+              <li class="megamenu"><a href="template/index.html">Mega Menu</a>
+                <ul class="dropdown">
+                  <li>
+                    <div class="megamenu-container container">
+                      <div class="row">
+                        <div class="mm-col col-md-2">
+                          <ul class="sub-menu">
+                            <li><a href="template/results-list.html">Brand new cars</a></li>
+                            <li><a href="template/results-list.html">Used cars</a></li>
+                            <li><a href="template/results-list.html">Latest reviews</a></li>
+                            <li><a href="template/blog.html">Auto news</a></li>
+                            <li><a href="template/about.html">Car insurance</a></li>
+                          </ul>
+                        </div>
+                        <div class="mm-col col-md-5">
+                          <span class="megamenu-sub-title">Browse by body type</span>
+                          <ul class="body-type-widget">
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/wagon.png" alt=""> <span>Wagon</span></a></li>
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/minivan.png" alt=""> <span>Minivan</span></a></li>
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/coupe.png" alt=""> <span>Coupe</span></a></li>
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/convertible.png" alt=""> <span>Convertible</span></a></li>
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/crossover.png" alt=""> <span>Crossover</span></a></li>
+                            <li> <a href="template/results-list.html"><img src="template/images/body-types/suv.png" alt=""> <span>SUV</span></a></li>
+                          </ul>
+                          <a href="template/results-list.html" class="basic-link">view all</a>
+                        </div>
+                        <div class="mm-col col-md-5">
+                          <span class="megamenu-sub-title">Browse by make</span>
+                          <ul class="make-widget">
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                            <li class="item"> <a href="template/results-list.html"><img src="template/http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt=""></a></li>
+                          </ul>
+                          <a href="template/results-list.html" class="basic-link">view all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="template/javascript:void(0)">Listing</a>
+                <ul class="dropdown">
+                  <li><a href="template/results-list.html">List View</a></li>
+                  <li><a href="template/results-grid.html">Grid View</a></li>
+                  <li><a href="template/vehicle-details.html">Vehicle Details</a></li>
+                  <li><a href="template/add-listing-form.html">Add new listing</a></li>
+                  <li><a href="template/vehicle-comparision.html">Vehicle Comparision</a></li>
+                </ul>
+              </li>
+              <li><a href="template/javascript:void(0)">Users</a>
+                <ul class="dropdown">
+                  <li><a href="template/dealer-prosite.html">Dealer Prosite</a></li>
+                  <li><a href="template/user-dashboard.html">User Dashboard</a></li>
+                  <li><a href="template/user-dashboard-saved-searches.html">Manage Saved Searches</a></li>
+                  <li><a href="template/user-dashboard-saved-cars.html">Manage Saved Cars</a></li>
+                  <li><a href="template/user-dashboard-manage-ads.html">Manage Ads</a></li>
+                  <li><a href="template/user-dashboard-profile.html">User Profile</a></li>
+                  <li><a href="template/user-dashboard-settings.html">User Settings</a></li>
+                </ul>
+              </li>
+              <li><a href="template/javascript:void(0)">Gallery</a>
+                <ul class="dropdown">
+                  <li><a href="template/gallery-2cols.html">Gallery 2 Columns</a></li>
+                  <li><a href="template/gallery-3cols.html">Gallery 3 Columns</a></li>
+                  <li><a href="template/gallery-4cols.html">Gallery 4 Columns</a></li>
+                  <li><a href="template/gallery-2cols-details.html">Gallery 2 Columns with Details</a></li>
+                  <li><a href="template/gallery-3cols-details.html">Gallery 3 Columns with Details</a></li>
+                  <li><a href="template/gallery-4cols-details.html">Gallery 4 Columns with Details</a></li>
+                </ul>
+              </li>
+              <li><a href="template/javascript:void(0)">Blog</a>
+                <ul class="dropdown">
+                  <li><a href="template/blog.html">Blog List</a></li>
+                  <li><a href="template/blog-masonry.html">Blog Masonry</a></li>
+                  <li><a href="template/single-post.html">Single Post</a></li>
+                  <li><a href="template/single-post-review.html">Single Review Post</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a href="template/#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+          <!-- Search Form -->
+          <div class="search-form">
+            <div class="search-form-inner">
+              <form>
+                <h3>Find a Car with our Quick Search</h3>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Postcode</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label>Body Type</label>
+                        <select name="Body Type" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>Wagon</option>
+                          <option>Minivan</option>
+                          <option>Coupe</option>
+                          <option>Crossover</option>
+                          <option>Van</option>
+                          <option>SUV</option>
+                          <option>Minicar</option>
+                          <option>Sedan</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Make</label>
+                        <select name="Make" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>Jaguar</option>
+                          <option>BMW</option>
+                          <option>Mercedes</option>
+                          <option>Porsche</option>
+                          <option>Nissan</option>
+                          <option>Mazda</option>
+                          <option>Acura</option>
+                          <option>Audi</option>
+                          <option>Bugatti</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label>Model</label>
+                        <select name="Model" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>GTX</option>
+                          <option>GTR</option>
+                          <option>GTS</option>
+                          <option>RLX</option>
+                          <option>M6</option>
+                          <option>S Class</option>
+                          <option>C Class</option>
+                          <option>B Class</option>
+                          <option>A Class</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Price Min</label>
+                        <select name="Min Price" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>$10000</option>
+                          <option>$20000</option>
+                          <option>$30000</option>
+                          <option>$40000</option>
+                          <option>$50000</option>
+                          <option>$60000</option>
+                          <option>$70000</option>
+                          <option>$80000</option>
+                          <option>$90000</option>
+                          <option>$100000</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label>Price Max</label>
+                        <select name="Max Price" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>$10000</option>
+                          <option>$20000</option>
+                          <option>$30000</option>
+                          <option>$40000</option>
+                          <option>$50000</option>
+                          <option>$60000</option>
+                          <option>$70000</option>
+                          <option>$80000</option>
+                          <option>$90000</option>
+                          <option>$100000</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Brand new only
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckbox2" value="option2"> Certified
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Min Year</label>
+                        <select name="Min Year" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>2005</option>
+                          <option>2006</option>
+                          <option>2007</option>
+                          <option>2008</option>
+                          <option>2009</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label>Max Year</label>
+                        <select name="Max Year" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>2005</option>
+                          <option>2006</option>
+                          <option>2007</option>
+                          <option>2008</option>
+                          <option>2009</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Min Mileage</label>
+                        <select name="Min Mileage" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>10000</option>
+                          <option>20000</option>
+                          <option>30000</option>
+                          <option>40000</option>
+                          <option>50000</option>
+                          <option>60000</option>
+                          <option>70000</option>
+                          <option>80000</option>
+                          <option>90000</option>
+                          <option>100000</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label>Max Mileage</label>
+                        <select name="Max Mileage" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>10000</option>
+                          <option>20000</option>
+                          <option>30000</option>
+                          <option>40000</option>
+                          <option>50000</option>
+                          <option>60000</option>
+                          <option>70000</option>
+                          <option>80000</option>
+                          <option>90000</option>
+                          <option>100000</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Transmission</label>
+                        <select name="Transmission" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>5 Speed Manual</option>
+                          <option>5 Speed Automatic</option>
+                          <option>6 Speed Manual</option>
+                          <option>6 Speed Automatic</option>
+                          <option>7 Speed Manual</option>
+                          <option>7 Speed Automatic</option>
+                          <option>8 Speed Manual</option>
+                          <option>8 Speed Automatic</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label>Body Color</label>
+                        <select name="Body Color" class="form-control selectpicker">
+                          <option selected>Any</option>
+                          <option>Red</option>
+                          <option>Black</option>
+                          <option>White</option>
+                          <option>Yellow</option>
+                          <option>Brown</option>
+                          <option>Grey</option>
+                          <option>Silver</option>
+                          <option>Gold</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="submit" class="btn btn-block btn-info btn-lg" value="Find my vehicle now">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Utiity Bar -->
+    <div class="utility-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-8">
+            <div class="toggle-make">
+              <a href="template/#"><i class="fa fa-navicon"></i></a>
+              <span>Browse by body style</span>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-4">
+            <ul class="utility-icons social-icons social-icons-colored">
+              <li class="facebook"><a href="template/#"><i class="fa fa-facebook"></i></a></li>
+              <li class="twitter"><a href="template/#"><i class="fa fa-twitter"></i></a></li>
+              <li class="googleplus"><a href="template/#"><i class="fa fa-google-plus"></i></a></li>
+              <li class="linkedin"><a href="template/#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="by-type-options">
+        <div class="container">
+          <div class="row">
+            <ul class="owl-carousel carousel-alt" data-columns="6" data-autoplay="" data-pagination="no" data-arrows="yes" data-single-item="no" data-items-desktop="6" data-items-desktop-small="4" data-items-mobile="3" data-items-tablet="4">
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/wagon.png" alt=""> <span>Wagon</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/minivan.png" alt=""> <span>Minivan</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/coupe.png" alt=""> <span>Coupe</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/convertible.png" alt=""> <span>Convertible</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/crossover.png" alt=""> <span>Crossover</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/suv.png" alt=""> <span>SUV</span></a></li>
+              <li class="item"> <a href="template/results-list.html#"><img src="template/images/body-types/minicar.png" alt=""> <span>Minicar</span></a></li>
+              <li class="item"> <a href="template/results-list.html"><img src="template/images/body-types/sedan.png" alt=""> <span>Sedan</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Body Content -->
+    <div class="main" role="main">
+      <div id="content" class="content full padding-b0">
+        <div class="container">
+          <!-- Welcome Content and Services overview -->
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="uppercase strong">Welcome to AutoStars<br>Listing portal</h1>
+              <p class="lead">AutoStars is the world's leading portal for<br>easy and quick <span class="accent-color">car buying and selling</span></p>
+            </div>
+            <div class="col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, <span class="accent-color">consectetur adipiscing</span> elit. Nulla convallis egestas rhoncus.</p>
+            </div>
+          </div>
+          <div class="spacer-75"></div>
+          <!-- Recently Listed Vehicles -->
+          <div class="spacer-60"></div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Body Content -->
+    <!-- Start site footer -->
+    <footer class="site-footer">
+      <div class="site-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 footer_widget widget widget_newsletter">
+              <h4 class="widgettitle">Sign up for our newsletter</h4>
+              <form>
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="email" class="form-control" placeholder="Email">
+                <input type="submit" class="btn btn-primary btn-lg" value="Sign up now">
+              </form>
+            </div>
+            <div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+              <h4 class="widgettitle">Blogroll</h4>
+              <ul>
+                <li><a href="template/blog.html">Car News</a></li>
+                <li><a href="template/blog-masonry.html">Car Reviews</a></li>
+                <li><a href="template/about.html">Car Insurance</a></li>
+                <li><a href="template/about-html">Bodyshop</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+              <h4 class="widgettitle">Help &amp; Support</h4>
+              <ul>
+                <li><a href="template/results-list.html">Buying a car</a></li>
+                <li><a href="template/joinus.html">Selling a car</a></li>
+                <li><a href="template/about.html">Online safety</a></li>
+                <li><a href="template/contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-sm-6 footer_widget widget text_widget">
+              <h4 class="widgettitle">About AutoStars</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 copyrights-left">
+              <p>&copy; 2014 AutoStars. All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 col-sm-6 copyrights-right">
+              <ul class="social-icons social-icons-colored pull-right">
+                <li class="facebook"><a href="template/#"><i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="template/#"><i class="fa fa-twitter"></i></a></li>
+                <li class="linkedin"><a href="template/#"><i class="fa fa-linkedin"></i></a></li>
+                <li class="youtube"><a href="template/#"><i class="fa fa-youtube"></i></a></li>
+                <li class="flickr"><a href="template/#"><i class="fa fa-flickr"></i></a></li>
+                <li class="vimeo"><a href="template/#"><i class="fa fa-vimeo-square"></i></a></li>
+                <li class="digg"><a href="template/#"><i class="fa fa-digg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End site footer -->
+    <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Login to your account</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"></i></span>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-key"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Login">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-block btn-facebook btn-social"><i class="fa fa-facebook"></i> Login with Facebook</button>
+          <button type="button" class="btn btn-block btn-twitter btn-social"><i class="fa fa-twitter"></i> Login with Twitter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>
