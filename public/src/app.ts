@@ -1,3 +1,18 @@
+import { autoinject } from 'aurelia-framework';
+import { EventAggregator } from 'aurelia-event-aggregator';
+import { Router } from 'aurelia-router';
+
+@autoinject
 export class App {
-  message = 'Hello World!';
+  constructor(
+      public router: Router,
+      private ea: EventAggregator
+  ) {
+    this.router.configure(config => {
+      config.options.pushState = true;
+      config.map([
+        {route: [''], moduleId: './Catalog/Index/Index', nav: true},
+      ]).mapUnknownRoutes({ redirect: '' });
+    });
+  }
 }
