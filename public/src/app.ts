@@ -11,7 +11,8 @@ export class App {
     this.router.configure(config => {
       config.options.pushState = true;
       config.map([
-        {route: [''], moduleId: './Catalog/Index/Index', nav: true},
+        {route: [''], moduleId: './Catalog/Index/Index', name: 'home',  nav: true},
+        {route: ['logIn'], moduleId: './Catalog/Index/Index'},
       ]).mapUnknownRoutes({ redirect: '' });
     });
   }
