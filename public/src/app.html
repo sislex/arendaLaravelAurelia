@@ -38,51 +38,9 @@
           <!-- Main Navigation -->
           <nav class="main-navigation dd-menu toggle-menu" role="navigation">
             <ul class="sf-menu">
-              <li><a href="template/javascript:void(0)">Home</a>
-                <ul class="dropdown">
-                  <li><a href="template/javascript:void(0)">Home versions</a>
-                    <ul class="dropdown">
-                      <li><a href="template/index.html">Default</a></li>
-                      <li><a href="template/index2.html">Version 2</a></li>
-                      <li><a href="template/index3.html">Version 3</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="template/javascript:void(0)">Slider versions</a>
-                    <ul class="dropdown">
-                      <li><a href="template/index.html">Default(Flexslider)</a></li>
-                      <li><a href="template/index-revslider.html">Slider Revolution <span class="label label-danger">New</span></a></li>
-                      <li><a href="template/hero-carousel.html">Full Width Carousel</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="template/javascript:void(0)">Search Form Positions</a>
-                    <ul class="dropdown">
-                      <li><a href="template/index.html">Default(With Main Menu)</a></li>
-                      <li><a href="template/search-below-slider.html">Below Slider</a></li>
-                      <li><a href="template/search-over-slider.html">Over Slider</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="template/javascript:void(0)">Header versions</a>
-                    <ul class="dropdown">
-                      <li><a href="template/index.html">Default</a>
-                      <li><a href="template/header-v2.html">Version 2</a></li>
-                      <li><a href="template/header-v3.html">Version 3</a></li>
-                      <li><a href="template/header-v4.html">Version 4</a></li>
-                    </ul>
-                  </li>
-                </ul>
+              <li><a href="/">Home</a>
               </li>
-              <li><a href="template/javascript:void(0)">Pages</a>
-                <ul class="dropdown">
-                  <li><a href="template/about.html">About Us</a></li>
-                  <li><a href="template/contact.html">Contact Us</a></li>
-                  <li><a href="template/joinus.html">Signup</a></li>
-                  <li><a href="template/404.html">404 Error Page</a></li>
-                  <li><a href="template/add-listing-pricing.html">Pricing</a></li>
-                  <li><a href="template/shortcodes.html">Shortcodes</a></li>
-                  <li><a href="template/typography.html">Typography</a></li>
-                  <li><a href="template/dealers-search.html">Dealer Search</a></li>
-                  <li><a href="template/dealers-search-results.html">Dealer Search Results</a></li>
-                </ul>
+              <li><a href="pages">Pages</a>
               </li>
               <li><a href="template/javascript:void(0)">Listing</a>
                 <ul class="dropdown">
@@ -380,25 +338,7 @@
     </div>
     <!-- Start Body Content -->
     <div class="main" role="main">
-      <div id="content" class="content full padding-b0">
-        <div class="container">
-          <!-- Welcome Content and Services overview -->
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="uppercase strong">Welcome to AutoStars<br>Listing portal</h1>
-              <p class="lead">AutoStars is the world's leading portal for<br>easy and quick <span class="accent-color">car buying and selling</span></p>
-            </div>
-            <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, <span class="accent-color">consectetur adipiscing</span> elit. Nulla convallis egestas rhoncus.</p>
-            </div>
-          </div>
-          <div class="spacer-75"></div>
-          <!-- Recently Listed Vehicles -->
-          <div class="spacer-60"></div>
-
-        </div>
-      </div>
+      <router-view></router-view>
     </div>
     <!-- End Body Content -->
     <!-- Start site footer -->
