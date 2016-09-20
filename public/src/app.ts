@@ -11,7 +11,7 @@ export class App {
       config.options.pushState = true;
       config.map([
         {route: [''], moduleId: './Catalog/Index/Index', nav: true},
-        {route: ['/pages'], moduleId: './Catalog/Catalog/Catalog', nav: true},
+        {route: ['/catalog'], moduleId: './Catalog/Catalog/Catalog', nav: true},
       ]).mapUnknownRoutes({ redirect: '/pages' });
     });
   }

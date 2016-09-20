@@ -1,0 +1,30 @@
+<template>
+    <div class="tbsticky filters-sidebar">
+        <h3>Refine Search</h3>
+        <div class="accordion" id="toggleArea">
+            <!-- Filter by Model -->
+            <div class="accordion-group" repeat.for="item of categories">
+                <div class="accordion-heading togglize">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseThird">
+                        ${item.item.name} <i class="fa fa-angle-down"></i>
+                    </a>
+                </div>
+                <div id="collapseThird" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        <ul class="filter-options-list list-group">
+                            <li class="list-group-item"><span class="badge">38</span><a href="#">Alpina</a></li>
+                            <li class="list-group-item"><span class="badge">6</span><a href="#">M3</a></li>
+                            <li class="list-group-item"><span class="badge">54</span><a href="#">M5</a></li>
+                            <li class="list-group-item"><span class="badge">9</span><a href="#">M6</a></li>
+                            <li class="list-group-item"><span class="badge">4</span><a href="#">X1</a></li>
+                            <li class="list-group-item"><span class="badge">23</span><a href="#">X3</a></li>
+                            <li class="list-group-item"><span class="badge">41</span><a href="#">X5</a></li>
+                            <li class="list-group-item"><span class="badge">38</span><a href="#">Z3</a></li>
+                            <li class="list-group-item"><span class="badge">38</span><a href="#">Z4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
