@@ -5,7 +5,12 @@
             <!-- Filter by Model -->
             <div class="accordion-group" repeat.for="item of categories">
                 <div class="accordion-heading togglize">
-                    <a class="accordion-toggle" href="#" click.trigger="item.collapse = !item.collapse">
+                    <a if.bind="item.children.length>0" class="accordion-toggle" click.trigger="item.collapse = !item.collapse">
+                        ${item.item.name}
+                        <i class="fa fa-angle-down" if.bind="item.children.length>0"></i>
+                    </a>
+
+                    <a if.bind="!item.children.length" class="accordion-toggle" href="#catalog/${item.item.pseudo}">
                         ${item.item.name}
                         <i class="fa fa-angle-down" if.bind="item.children.length>0"></i>
                     </a>
@@ -15,7 +20,7 @@
                         <ul class="filter-options-list list-group">
                             <li class="list-group-item" repeat.for="child of item.children">
                                 <!--<span class="badge">38</span>-->
-                                <a href="#">${child.item.name}</a>
+                                <a href="#catalog/${child.item.pseudo}">${child.item.name}</a>
                             </li>
                         </ul>
                     </div>
