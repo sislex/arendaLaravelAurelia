@@ -1,18 +1,16 @@
-import { autoinject } from 'aurelia-framework';
-import { Router } from 'aurelia-router';
+import { AppRouter, autoinject } from 'aurelia-router';
 
 @autoinject
 export class App {
-  message: string = 'Doc Loader';
   constructor(
-      public router: Router
+      public router: AppRouter
   ) {
     this.router.configure(config => {
-      config.options.pushState = true;
+      //config.options.pushState = true;
       config.map([
         {route: [''], moduleId: './Catalog/Index/Index', nav: true},
         {route: ['/catalog'], moduleId: './Catalog/Catalog/Catalog', nav: true},
-      ]).mapUnknownRoutes({ redirect: '/pages' });
+      ]).mapUnknownRoutes({ redirect: '/catalog' });
     });
   }
 }

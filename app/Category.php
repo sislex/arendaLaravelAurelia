@@ -11,7 +11,7 @@ class Category extends Model
 
     static function getCategory(){
         $Category = new Category;
-        $items = $Category->select('id', 'category_id', 'name')->get();
+        $items = $Category->select('id', 'category_id', 'name', 'pseudo')->get();
 
 //        dd($items[0]);
 
