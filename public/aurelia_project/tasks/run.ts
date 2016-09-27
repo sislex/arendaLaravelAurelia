@@ -24,6 +24,10 @@ let serve = gulp.series(
       logLevel: 'silent',
       server: {
         baseDir: ['.'],
+        routes: {
+          "/catalog": "",
+          "/**/**": ""
+        },
         middleware: [historyApiFallback(), function(req, res, next) {
           res.setHeader('Access-Control-Allow-Origin', '*');
           next();

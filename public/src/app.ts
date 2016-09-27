@@ -6,7 +6,7 @@ export class App {
       public router: AppRouter
   ) {
     this.router.configure(config => {
-      //config.options.pushState = true;
+      config.options.pushState = true;
       config.map([
         {route: [''], moduleId: './Catalog/Index/Index', nav: true},
         {route: ['/catalog'], moduleId: './Catalog/Catalog/Catalog', nav: true},
