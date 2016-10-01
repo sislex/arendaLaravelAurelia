@@ -11,239 +11,43 @@
         </div>
         <div id="results-holder" class="results-list-view">
             <!-- Result Item -->
-            <div class="result-item format-standard">
+            <div repeat.for="good of goods" class="result-item format-standard">
                 <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-default vehicle-age">2014</span>
-                    <span class="label label-success premium-listing">Premium Listing</span>
+                    <a href="vehicle-details.html" class="media-box">
+                        <img if.bind="good.imgArr.length==0" src="http://placehold.it/600x400&amp;text=Нет картинки" alt="">
+                        <img if.bind="good.imgArr.length>0" src="images/goods/${good.imgArr[0]}.jpg" alt="">
+                    </a>
+                    <!--<span class="label label-default vehicle-age">${good.imgArr[0]}</span>-->
+                    <!--<span class="label label-success premium-listing">Premium Listing</span>-->
                     <div class="result-item-view-buttons">
                         <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
                         <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
                     </div>
                 </div>
                 <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Nissan Terrano single hand driven</a></h4>
+                    <h4 class="result-item-title"><a href="vehicle-details.html">${good.name}</a></h4>
                     <div class="result-item-cont">
                         <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
+                            <p>${good.mini_text}</p>
                         </div>
                         <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$48000</div>
+                            <div if.bind="good.price" class="result-item-pricing">
+                                <div class="price">${good.price}</div>
                             </div>
                             <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
+                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> В избранное</a>
                             </div>
                         </div>
                     </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>4 door SUV</li>
-                            <li>6 cyl, 3.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>4x4 Wheel Drive</li>
-                            <li>Listed by Individual</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Item -->
-            <div class="result-item format-standard">
-                <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-primary vehicle-age">Brand new</span>
-                    <span class="label label-success premium-listing">Premium Listing</span>
-                    <div class="result-item-view-buttons">
-                        <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
-                        <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
-                    </div>
-                </div>
-                <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Mercedes Benz E Class</a></h4>
-                    <div class="result-item-cont">
-                        <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
-                        </div>
-                        <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$95000</div>
-                            </div>
-                            <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>2 door Convertible</li>
-                            <li>4.5 cyl, 2.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>Brand New</li>
-                            <li>Listed by Dealer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Item -->
-            <div class="result-item format-standard">
-                <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-default vehicle-age">2014</span>
-                    <span class="label label-success premium-listing">Premium Listing</span>
-                    <div class="result-item-view-buttons">
-                        <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
-                        <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
-                    </div>
-                </div>
-                <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Nissan Sunny 1 owner, full service history , 18 inch alloy wheels</a></h4>
-                    <div class="result-item-cont">
-                        <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
-                        </div>
-                        <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$43000</div>
-                            </div>
-                            <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>4 door Coupe</li>
-                            <li>6 cyl, 3.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>4x4 Wheel Drive</li>
-                            <li>Listed by Individual</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Item -->
-            <div class="result-item format-standard">
-                <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-primary vehicle-age">Brand new</span>
-                    <div class="result-item-view-buttons">
-                        <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
-                        <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
-                    </div>
-                </div>
-                <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Nissan Micra</a></h4>
-                    <div class="result-item-cont">
-                        <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
-                        </div>
-                        <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$28000</div>
-                            </div>
-                            <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>4 door SUV</li>
-                            <li>6 cyl, 3.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>4x4 Wheel Drive</li>
-                            <li>Listed by Individual</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Item -->
-            <div class="result-item format-standard">
-                <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-default vehicle-age">2014</span>
-                    <div class="result-item-view-buttons">
-                        <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
-                        <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
-                    </div>
-                </div>
-                <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Mazda 2 Sedan</a></h4>
-                    <div class="result-item-cont">
-                        <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
-                        </div>
-                        <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$39000</div>
-                            </div>
-                            <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>4 door Sedan</li>
-                            <li>6 cyl, 3.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>4x4 Wheel Drive</li>
-                            <li>Listed by Dealer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Result Item -->
-            <div class="result-item format-standard">
-                <div class="result-item-image">
-                    <a href="vehicle-details.html" class="media-box"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt=""></a>
-                    <span class="label label-default vehicle-age">2012</span>
-                    <div class="result-item-view-buttons">
-                        <a href="https://www.youtube.com/watch?v=P5mvnA4BV7Y" data-rel="prettyPhoto"><i class="fa fa-play"></i> View video</a>
-                        <a href="vehicle-details.html"><i class="fa fa-plus"></i> View details</a>
-                    </div>
-                </div>
-                <div class="result-item-in">
-                    <h4 class="result-item-title"><a href="vehicle-details.html">Mercedes Benz SL-300</a></h4>
-                    <div class="result-item-cont">
-                        <div class="result-item-block col1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam..</p>
-                        </div>
-                        <div class="result-item-block col2">
-                            <div class="result-item-pricing">
-                                <div class="price">$45000</div>
-                            </div>
-                            <div class="result-item-action-buttons">
-                                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-star-o"></i> Save</a>
-                                <a href="vehicle-details.html" class="btn btn-default btn-sm">Enquire</a><br>
-                                <a href="#" class="distance-calc"><i class="fa fa-map-marker"></i> Distance from me?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="result-item-features">
-                        <ul class="inline">
-                            <li>4 door Sedan</li>
-                            <li>6 cyl, 3.0 L Petrol</li>
-                            <li>6 speed Automatic</li>
-                            <li>4x4 Wheel Drive</li>
-                            <li>Listed by Individual</li>
-                        </ul>
-                    </div>
+                    <!--<div class="result-item-features">-->
+                        <!--<ul class="inline">-->
+                            <!--<li>4 door SUV</li>-->
+                            <!--<li>6 cyl, 3.0 L Petrol</li>-->
+                            <!--<li>6 speed Automatic</li>-->
+                            <!--<li>4x4 Wheel Drive</li>-->
+                            <!--<li>Listed by Individual</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>

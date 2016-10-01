@@ -12,7 +12,7 @@ export class categoriesCustomElement {
     ){
         this.http.get('http://arenda/getCategories')
             .then(data => {
-                console.log(JSON.parse(data.response));
+                //console.log(JSON.parse(data.response));
                 this.categories = JSON.parse(data.response);
             });
     }

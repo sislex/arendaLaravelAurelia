@@ -13,9 +13,8 @@ export class Catalog {
 
     configureRouter(config: RouterConfiguration, router: Router) {
         config.map([
-            {route: ['', '/:pseudo'], moduleId: './index/index', nav: true, name: 'home'},
+            {route: ['', '/:pseudo'], moduleId: './index/index', nav: true, name: 'catalog'},
         ]);
         this.router = router;
-        console.log(router);
     }
 }

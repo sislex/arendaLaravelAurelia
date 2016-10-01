@@ -11,6 +11,7 @@
 |
 */
 use App\Category;
+use App\Good;
 Route::get('/getCategories', function(){
     return response()
         ->json(Category::getCategory(),200)
@@ -18,4 +19,13 @@ Route::get('/getCategories', function(){
         ;
 
 });
+
+Route::get('/getGoodsByCategoryPseudo/{pseudo}', function($pseudo){
+    return response()
+        ->json(Good::getGoodsByCategoryPseudo($pseudo),200)
+        ->header('Access-Control-Allow-Origin', '*')
+        ;
+
+});
+
 Route::get('/{url?}', 'Catalog\CatalogController@index');
