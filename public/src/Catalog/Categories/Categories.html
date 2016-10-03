@@ -10,7 +10,7 @@
                         <i class="fa fa-angle-down" if.bind="item.children.length>0"></i>
                     </a>
 
-                    <a if.bind="!item.children.length" class="accordion-toggle" href="/catalog/${item.item.pseudo}">
+                    <a if.bind="!item.children.length" class="accordion-toggle" href="/spectehnika/${item.item.pseudo}">
                         ${item.item.name}
                         <i class="fa fa-angle-down" if.bind="item.children.length>0"></i>
                     </a>
@@ -20,7 +20,7 @@
                         <ul class="filter-options-list list-group">
                             <li class="list-group-item" repeat.for="child of item.children">
                                 <!--<span class="badge">38</span>-->
-                                <a href="/catalog/${child.item.pseudo}">${child.item.name}</a>
+                                <a href="/spectehnika/${child.item.pseudo}">${child.item.name}</a>
                             </li>
                         </ul>
                     </div>

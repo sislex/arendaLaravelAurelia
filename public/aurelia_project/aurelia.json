@@ -97,6 +97,7 @@
           "aurelia-event-aggregator",
           "aurelia-framework",
           "aurelia-http-client",
+          "aurelia-cookies",
           "aurelia-history",
           "aurelia-history-browser",
           "aurelia-loader",

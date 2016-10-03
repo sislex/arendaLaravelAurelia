@@ -25,7 +25,7 @@ let serve = gulp.series(
       server: {
         baseDir: ['.'],
         routes: {
-          "/catalog": "",
+          "/spectehnika": "",
           "/**/**": ""
         },
         middleware: [historyApiFallback(), function(req, res, next) {

@@ -13,11 +13,13 @@ export class Catalog {
     ){}
 
     activate(urlObj, routeObj){
-        let url = 'http://arenda/getGoodsByCategoryPseudo/' + urlObj.pseudo;
-        this.http.get(url)
-            .then(data => {
-                this.goods = JSON.parse(data.response);
-                console.log(this.goods[1].imgArr);
-            });
+        if(urlObj.pseudo){
+            let url = 'http://arenda/getGoodsByCategoryPseudo/' + urlObj.pseudo;
+            this.http.get(url)
+                .then(data => {
+                    this.goods = JSON.parse(data.response);
+                    //console.log(this.goods[1].imgArr);
+                });
+        }
     }
 }

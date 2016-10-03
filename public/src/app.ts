@@ -9,8 +9,8 @@ export class App {
       config.options.pushState = true;
       config.map([
         {route: [''], moduleId: './Catalog/Index/Index', nav: true},
-        {route: ['/catalog'], moduleId: './Catalog/Catalog/Catalog', nav: true},
-      ]).mapUnknownRoutes({ redirect: '/catalog' });
+        {route: ['/spectehnika'], moduleId: './Catalog/Catalog/Catalog', nav: true},
+      ]).mapUnknownRoutes({ redirect: '/spectehnika' });
     });
   }
 }
